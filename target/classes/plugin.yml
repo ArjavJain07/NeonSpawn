@@ -1,0 +1,11 @@
+name: NeonSpawn
+version: 1.0
+main: com.neonspawn.NeonSpawn
+commands:
+  spawn:
+    description: Teleports you to the spawn point
+    usage: /spawn
+  setspawn:
+    description: Sets the spawn point
+    usage: /setspawn
+    permission: neonspawn.setspawn

@@ -1,0 +1,4 @@
+# Default configuration for NeonSpawn
+spawn-message: "You have been teleported to spawn!"
+setspawn-message: "Spawn location set successfully!"
+no-permission: "You do not have permission!"
