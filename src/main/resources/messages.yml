@@ -1,0 +1,8 @@
+# messages.yml
+spawn-not-set: "&cSpawn location has not been set!"
+teleport-start: "&aTeleporting to spawn in %time% seconds..."
+teleport-cancelled: "&cTeleport cancelled due to movement!"
+teleport-success: "&aYou have been teleported to spawn!"
+no-permission: "&cYou don't have permission!"
+only-players: "&cThis command can only be run by players!"
+menu-title: "&b&lSpawn Menu"

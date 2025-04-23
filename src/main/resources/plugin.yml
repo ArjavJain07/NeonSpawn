@@ -1,11 +1,16 @@
 name: NeonSpawn
+main: com.neonstudios.neonspawn.NeonSpawn
 version: 1.0
-main: com.neonspawn.NeonSpawn
+api-version: 1.13
 commands:
   spawn:
-    description: Teleports player to spawn
-    usage: /spawn
+    description: Teleport to spawn
   setspawn:
-    description: Sets the spawn point
-    usage: /setspawn
+    description: Set the spawn location
     permission: neonspawn.setspawn
+  spawnmenu:
+    description: Open the spawn GUI
+permissions:
+  neonspawn.setspawn:
+    description: Allows setting the spawn point
+    default: op

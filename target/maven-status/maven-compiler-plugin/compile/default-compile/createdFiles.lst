@@ -1,1 +1,10 @@
-com\neonspawn\NeonSpawn.class
+com\neonstudios\neonspawn\SetSpawnCommand.class
+com\neonstudios\neonspawn\TeleportTask.class
+com\neonstudios\neonspawn\SpawnCommand.class
+com\neonstudios\neonspawn\SpawnHandler.class
+com\neonstudios\neonspawn\Messages.class
+com\neonstudios\neonspawn\SpawnMenuCommand.class
+com\neonstudios\neonspawn\MoveCancelListener.class
+com\neonstudios\neonspawn\TeleportTask$1.class
+com\neonstudios\neonspawn\NeonSpawn.class
+com\neonstudios\neonspawn\SpawnGUI.class
