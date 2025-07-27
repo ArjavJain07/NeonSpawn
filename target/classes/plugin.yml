@@ -8,9 +8,15 @@ commands:
   setspawn:
     description: Set the spawn location
     permission: neonspawn.setspawn
-  spawnmenu:
-    description: Open the spawn GUI
+  neonspawn:
+    description: Main plugin management command
+    usage: /<command> reload
+    permission: neonspawn.reload
+    permission-message: "&cYou don't have permission to use this command."
 permissions:
   neonspawn.setspawn:
     description: Allows setting the spawn point
+    default: op
+  neonspawn.reload:
+    description: Allows reloading NeonSpawn config and messages
     default: op
