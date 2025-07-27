@@ -1,8 +1,27 @@
-# messages.yml
-spawn-not-set: "&cSpawn location has not been set!"
-teleport-start: "&aTeleporting to spawn in %time% seconds..."
-teleport-cancelled: "&cTeleport cancelled due to movement!"
-teleport-success: "&aYou have been teleported to spawn!"
-no-permission: "&cYou don't have permission!"
-only-players: "&cThis command can only be run by players!"
+prefix: "&b&lNeonSpawn &7»"
+reload-success: "%prefix% &aNeonSpawn configuration and messages reloaded!"
+
+spawn-set: "%prefix% &aSpawn location has been successfully set!"
+spawn-not-set: "%prefix% &cSpawn location has not been set!"
+teleport-start: "%prefix% &aTeleporting to spawn in %time% seconds..."
+teleport-cancelled: "%prefix% &cTeleport cancelled due to movement!"
+teleport-success: "%prefix% &aYou have been teleported to spawn!"
+no-permission: "%prefix% &cYou don't have permission!"
+only-players: "%prefix% &cThis command can only be run by players!"
 menu-title: "&b&lSpawn Menu"
+join-msg: "%prefix% &b&lWelcome to the Server!"
+
+bossbar:
+  teleport:
+    start: "&aTeleporting in %time% seconds..."
+    cancelled: "&cTeleport cancelled!"
+
+actionbar:
+  teleport:
+    start: "&bTeleporting in %time% seconds..."
+    cancelled: "&cTeleport cancelled!"
+    success: "&aTeleport successful!"
+
+title:
+  main: "&aWelcome to &eSpawn"
+  sub: "&7You have arrived!"

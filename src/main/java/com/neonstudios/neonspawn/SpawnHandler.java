@@ -1,16 +1,26 @@
 package com.neonstudios.neonspawn;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
+
+import java.util.Objects;
 
 public class SpawnHandler {
 
     public static void loadSpawn() {
         FileConfiguration config = NeonSpawn.getInstance().getConfig();
         if (!config.contains("spawn")) return;
+        String worldName = config.getString("spawn.world", "");
+        World world = Bukkit.getWorld(worldName);
+        if (world == null) {
+            NeonSpawn.getInstance().getLogger().warning("Spawn world '" + worldName + "' does not exist or is not loaded.");
+            return;
+        }
 
         Location loc = new Location(
-                Bukkit.getWorld(config.getString("spawn.world")),
+                Bukkit.getWorld(Objects.requireNonNull(config.getString("spawn.world"))),
+
                 config.getDouble("spawn.x"),
                 config.getDouble("spawn.y"),
                 config.getDouble("spawn.z"),

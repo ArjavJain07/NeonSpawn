@@ -1,3 +1,45 @@
-teleport-delay: 5
-cancel-sound: true
-countdown-sound: true
+teleport-delay: 5 # Seconds before teleport
+
+spawn:
+  world: world
+  x: 0
+  y: 64
+  z: 0
+  yaw: 0
+  pitch: 0
+
+cancel-on-move: true
+cancel-on-block-change-only: true # Only cancels if player moves to a different block (not just head movement)
+
+enable-actionbar: true
+enable-bossbar: true
+enable-title: true
+enable-particles: true
+enable-sounds: true
+
+effects:
+  actionbar:
+    teleport-start: true
+    teleport-cancelled: true
+    teleport-success: true
+
+  bossbar:
+    teleport-start: true
+    teleport-cancelled: true
+    teleport-success: true
+
+  title:
+    teleport-success:
+      fadeIn: 10
+      stay: 40
+      fadeOut: 10
+
+  particles:
+    teleport-start: "VILLAGER_HAPPY"
+    teleport-cancelled: "SMOKE_LARGE"
+    teleport-success: "END_ROD"
+
+  sounds:
+    teleport-start: "BLOCK_NOTE_BLOCK_PLING"
+    teleport-cancelled: "ENTITY_ITEM_BREAK"
+    teleport-success: "ENTITY_PLAYER_LEVELUP"
