@@ -1,3 +1,11 @@
+# NeonSpawn
+# Developed by NeonStudios
+# Discord: https://dsc.gg/neonstudios
+
+# Version 0.1.5
+# Configuration for NeonSpawn plugin
+# This file is used to configure the spawn settings and effects for the NeonSpawn plugin.
+
 teleport-delay: 5 # Seconds before teleport
 
 spawn:
