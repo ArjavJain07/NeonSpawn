@@ -31,7 +31,7 @@ public class NeonSpawn extends JavaPlugin {
         // Register event listeners
         Bukkit.getPluginManager().registerEvents(new MoveCancelListener(), this);
         Bukkit.getPluginManager().registerEvents(new RespawnListener(), this);
-        Bukkit.getPluginManager().registerEvents(new JoinListener(), this);
+        getServer().getPluginManager().registerEvents(new PlayerJoinListener(this), this);
 
         // Initialize Metrics with pluginId = 26222
         int pluginId = 26222;

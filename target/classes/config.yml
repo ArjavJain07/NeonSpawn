@@ -8,6 +8,16 @@
 
 teleport-delay: 5 # Seconds before teleport
 
+first-join:
+  message-type: "chat" # or "title"
+  sound: "ENTITY_PLAYER_LEVELUP"
+  particle: "HAPPY_VILLAGER"
+  particle-amount: 40
+  particle-offset: 0.5
+  sound-volume: 1.2
+  sound-pitch: 1.0
+
+
 spawn:
   world: world
   x: 0
